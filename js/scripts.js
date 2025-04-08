@@ -1,4 +1,4 @@
-let stockId_list=['2330',' 3231','2382','2454','2356','2317'] ; // 台積電(2330), 東元(1504) 鴻海(2317) , 亞泥(1102) , 聯發科(2454), 大成鋼(2027) , 京元電(2449)  聯強(2347) , 台泥(1101) , 大同(2371) , 中鋼(2002)
+let stockId_list=['2330','3231','2382','2454','2356','2317'] ; // 台積電(2330), 東元(1504) 鴻海(2317) , 亞泥(1102) , 聯發科(2454), 大成鋼(2027) , 京元電(2449)  聯強(2347) , 台泥(1101) , 大同(2371) , 中鋼(2002)
 const fetchUrl_str1="https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:" , fetchUrl_str2=":STOCK&quote=1" , 
 		str_1="https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:" , str_3=":STOCK&quote=1" ;
 const element1 = document.getElementById("myBar1");
