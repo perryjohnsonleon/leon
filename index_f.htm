@@ -12,9 +12,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script type="text/javascript">
-           let firstVisit = true ;     // original value:  true 
-           let refSec = 3000 ; // original value:  0
-        </script>
+          let firstVisit = true ;     // original value:  true 
+          let refSec = 3000 ; // original value:  0
+       </script>
     </head>
     <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
@@ -35,11 +35,13 @@
           <span><select id="s01">
                 <option value="-1">請選擇</option>
 				<option value="0">STOP</option>
+				<option value="A">當沖股</option>
 				<option value="B">製造業</option>
                 <option value="C">電子１</option>
 				<option value="D">電子２</option>
 				<option value="E">金融股</option>
 				<option value="F" selected>航運股</option>
+				<option value="Z">美股</option>
                 <option value="7">10'm</option>
                 <option value="10">30'm</option>
             </select></span>
@@ -67,13 +69,14 @@
       </thead>
       <tr>
       <td colspan="3" style="width:100%">
-          <div id="hiddenMsg1">
-          </div>
+        <div id="hiddenMsg1">
           <div style="display:flex">	  
-          <div id="hiddenElement1">
-          </div>
-          <div id="hiddenElement2">
-
+              <div id="hiddenElement1">
+              </div>
+              <div id="hiddenElement2">
+              </div>
+              <div id="collapseBtn"><img src="collapse.png" style="cursor:pointer;" onclick="collapseElement()" />
+              </div>
           </div>
         </div>
       </td>  

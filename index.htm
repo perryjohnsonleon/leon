@@ -22,7 +22,7 @@
     <table style="width:95%">
       <thead>
         <tr>
-          <th style="width:32%">
+        <th style="width:32%">
 		  <div style="line-height:1.2;font-size:12px;">
 		  <div id="wi-d" style="line-height:1.2;font-size:16px;"></div>
 		  <div id="wi-c" class="wi-box" style="line-height:1.2;font-size:12px;"></div>
@@ -32,14 +32,22 @@
 		  <div>
 		  </th>
           <th style="width:33%">
-          <span><select id="s01">
-                <option value="-1">請選擇</option>
+          <span>
+        <select id="s01">
+        <option value="-1">請選擇</option>
 				<option value="0">STOP</option>
+				<option value="A">當沖股</option>
 				<option value="B">製造業</option>
                 <option value="C">電子１</option>
 				<option value="D">電子２</option>
 				<option value="E">金融股</option>
 				<option value="F">航運股</option>
+				<option value="Z">美股</option>
+                <option value="1">3's</option>
+                <option value="2">5's</option>
+                <option value="3">10's</option>
+                <option value="5">30's</option>
+                <option value="6">1'm</option>
                 <option value="7">10'm</option>
                 <option value="10" selected>30'm</option>
             </select></span>
@@ -67,14 +75,15 @@
       </thead>
       <tr>
       <td colspan="3" style="width:100%">
-          <div id="hiddenMsg1">
-          </div>
-          <div style="display:flex">	  
-          <div id="hiddenElement1">
-          </div>
-          <div id="hiddenElement2">
-
-          </div>
+        <div id="hiddenMsg1">
+              <div style="display:flex">	  
+                  <div id="hiddenElement1">
+                  </div>
+                  <div id="hiddenElement2">
+                  </div>
+                  <div id="collapseBtn"><img src="collapse.png" style="cursor:pointer;" onclick="collapseElement()" />
+                  </div>
+              </div>
         </div>
       </td>  
       </tr>
@@ -129,6 +138,7 @@
 </div>
  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <!-- script src="js/scripts.js"></script -->
  </body>
 </html>

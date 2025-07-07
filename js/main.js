@@ -1,4 +1,5 @@
-const stockId_list=['2330','5410','2347','2454','2308','3231']; // 台積電(2330), 東元(1504) 鴻海(2317) , 亞泥(1102) , 聯發科(2454), 大成鋼(2027) , 京元電(2449)  聯強(2347) , 台泥(1101) , 大同(2371) , 中鋼(2002)
+// let stockId_list=['2330','1402','1102','2002','2027','1101'] ; // 台積電(2330), 東元(1504) 鴻海(2317) , 亞泥(1102) , 聯發科(2454), 大成鋼(2027) , 京元電(2449)  聯強(2347) , 台泥(1101) , 大同(2371) , 中鋼(2002)
+import stockId_list from "./lib.js" ;
 const fetchUrl_str1="https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:" , fetchUrl_str2=":STOCK&quote=1" , 
   str_1="https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:" , str_3=":STOCK&quote=1" ;
 const element1 = document.getElementById("myBar1");
@@ -39,36 +40,33 @@ const element1 = document.getElementById("myBar1");
 					  case "Z": 
 							window.location.href = 'https://perryjohnsonleon.github.io/exercise/index_z.htm' ;
 							break;
-            case "-1": 
-            window.location.href = 'https://perryjohnsonleon.github.io/exercise' ;
-            break;
-            case "0": 
-                  width = 100;
-                  refSec = 99999 ;
-                  element1.style.width = '0%'; 
-                  break;
-            case "1": 
-                  refSec = 3000 ;
-                  break;
-            case "2":
-                  refSec = 5000 ;
-                  break;
-            case "3": 
-                  refSec = 10000 ;
-                  break;
-            case "5": 
-                  refSec = 30000 ;
-                  break;
-            case "6": 
-                refSec = 60000 ;
-                  break;
-            case "7": 
-                refSec = 600000 ;
-                  break; 
-            case "10": 
-                refSec = 1800000 ;
-                  break;                                     
-            default:
+                      case "0": 
+                           width = 100;
+                           refSec = 99999 ;
+                           element1.style.width = '0%'; 
+                           break;
+                      case "1": 
+                      	   refSec = 3000 ;
+                           break;
+                      case "2":
+                           refSec = 5000 ;
+                           break;
+                      case "3": 
+                           refSec = 10000 ;
+                           break;
+                      case "5": 
+                      	   refSec = 30000 ;
+                           break;
+                      case "6": 
+                    	   refSec = 60000 ;
+                           break;
+                      case "7": 
+                   	      refSec = 600000 ;
+                           break; 
+                      case "10": 
+                   	      refSec = 1800000 ;
+                           break;                                     
+                      default:
 						  return;
                     } 
 				   while(intervalIds.length){
@@ -93,7 +91,7 @@ const element1 = document.getElementById("myBar1");
 			 switch ( s01_val ) {
                       case "0": 
                           width = 100;
-						              refSec = 99999 ;
+						  refSec = 99999 ;
                        	  element1.style.width = '0%'; 
                           break;
                       case "1": 
@@ -127,9 +125,9 @@ const element1 = document.getElementById("myBar1");
                    	      refSec = 1800000 ;
                           break;                                     
                       default:
-                        refSec = 60000 ;
-                        return;
-                    } 					
+                         return;
+                    } 
+					
                    str_2= $(this).val() ;
 				   getDATA();
                  //  str_2=document.getElementById("s02").value ;
@@ -473,7 +471,7 @@ const element1 = document.getElementById("myBar1");
             });
            });    
          //  Ending 5th stock section                                                    
-          // Option selected index  section
+          //  Option selected index  section
             if (str_2 !="0") {
               ajaxURL=str_1 + str_2 + str_3 ;	 
          $.getJSON(ajaxURL,function(data){

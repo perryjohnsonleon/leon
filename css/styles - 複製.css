@@ -41,16 +41,16 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 0, 0, 0;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 2rem;
+  --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #000;
+  --bs-body-bg: #fff;
 }
 
 *,
@@ -2546,11 +2546,6 @@ textarea.form-control-lg {
   margin-right: 1rem;
 }
 
-.btn-expand {
-  background-color:#b0b0b0; 
-  color: #000;;
-  border: none;
-}	
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -7284,8 +7279,8 @@ textarea.form-control-lg {
 }
 
 .my-5 {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .my-auto {
@@ -11304,7 +11299,7 @@ html {
 }
 
 #myProgress1,#myProgress2 {
-  width: 95%;
+  width:40%;
   height:20px;
   position: relative;
   background-color: #ddd;
@@ -11336,15 +11331,18 @@ html {
 }
 
 .wi-risePrice {
+	font-size:1.75rem;
   color: #F30E4B;
   
 }
 
 .wi-fellPrice {
+	font-size:1.75rem;
   color: #1DC91D;
 }
 
 .wi-flatPrice {
+  font-size:1.75rem;
   color: #fff;
 }
 
@@ -11361,17 +11359,17 @@ html {
 }
 
 .wii-sum {
- // font-size:1.75rem;
+  font-size:1.75rem;
   color:#FFB300;
 }
 
 .wii-diff {
- // font-size:1.5rem;
+  font-size:1.5rem;
   color:#FFB300;
 }
 
 .wi-box {
-  font-size:1.2rem;
+  font-size:1.5rem;
   color:#FFB300;
 }
 
@@ -11379,41 +11377,3 @@ html {
   font-size:1.75rem;
   color:#FFB300;
 }
-
- table,th,td {
-         	 color:#fff ;
-             border: 1px solid black;
-             border-collapse: collapse;
- }
-
-/*
- tr:nth-child(even) {
-            background-color: rgba(150, 212, 212, 0.4);
- }
-*/
- tr:nth-child(1) {
-            background-color: rgba(150, 212, 212, 0.4);
-  }            
- th:nth-child(1),td:nth-child(1) {
-         background-color: rgba(150, 212, 212, 0.4);
- } 
- 
- .span_rpt {
-	 font-size: 1.25rem;	 
- }
-
- #hiddenMsg1 {
-  display: none; 
- }
-
- /*
- #hiddenElement,#hiddenElement1,#hiddenElement2,#hiddenElement3,#hiddenMsg1 {
-  display: none; 
- }
-*/
-        
-#hiddenMsg1 {
-   display: none; /* Initially hide the element */
-	 font-size:0.5rem;
-}
-        
